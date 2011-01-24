@@ -1,0 +1,110 @@
+LOADING JQUIZ
+
+1) Load the CSS
+<link href='jquiz.css' type='text/css' rel='stylesheet' />
+
+2) Load jQuery locally or through Google.
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+3) Load jQuiz JavaScript file.
+<script type="text/javascript" src="jquiz.js"></script>
+
+You may have to modify the href of the CSS and the src of the javascript files to make sure they are pointing to the right location. Please google the answer if you do not know how.
+
+FORMATTING JQUIZ HTML
+
+1) start off with an ordered list with the id "jquiz"
+2) each following and immediated list item is one question.
+3) the unordered list and list items within the previous list items are the question options.
+4) make sure you put a 'class="correct"' next to the correct answer so the javascript knows which is right.
+5) the div with classes 'explanation' and 'hidden' tell the person a little bit about the answer once they have answered.
+6) the div with id of 'quizremarks' shows up at the end. by default, it shows how many they got correct, but can be modified to display whatever you want.
+
+EXAMPLE HTML OF JQUIZ
+
+
+<ol id="quiz">
+
+    <li>
+
+		<p>jQuiz is the coolest thing since sliced bread.</p>
+
+    <ul>
+
+        <li class="correct">True</li>
+
+        <li>False</li>
+
+    </ul>
+
+    <div class="explanation hidden">
+
+		<p>Of course you're right. Now <a href="http://websitedesignernc.com">go back</a>.</p>
+
+	</div>
+
+    </li>
+
+    <li>
+
+		<p>What website should jQuiz be featured on?</p>
+
+    <ul>
+
+		<li>Kumquat Lovers Anonymous</li>
+
+        <li class="correct">Smashing Magazine</li>
+
+		<li>Facebook Farmville Fanatics</li>
+
+        
+
+    </ul>
+
+    <div class="explanation hidden">
+
+		<p><a href="http://smashingmagazine.com">Smashing Magazine</a> is a pretty cool web site.</p>
+
+	</div>
+
+    </li>
+
+    <li>
+
+		<p>How much is jQuiz worth?</p>
+
+    <ul>
+
+		<li>$0</li>
+
+        <li>$100</li>
+
+		<li>$1,000</li>
+
+		<li>$1,000,000</li>
+
+		<li class="correct">$1,000,000,000,000,000,000</li>
+
+        
+
+    </ul>
+
+    <div class="explanation hidden">
+
+		<p>You know that's right!</p>
+
+	</div>
+
+    </li>
+
+
+
+</ol>
+
+
+
+<div id="quizremarks">
+
+	<p id="quiztotal">&nbsp;</p>
+
+</div>
