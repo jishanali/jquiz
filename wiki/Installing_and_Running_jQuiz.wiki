@@ -1,13 +1,19 @@
 LOADING JQUIZ
 
 1) Load the CSS
+<CODE>
 <link href='jquiz.css' type='text/css' rel='stylesheet' />
+</code>
 
 2) Load jQuery locally or through Google.
+<Code>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+</code>
 
 3) Load jQuiz JavaScript file.
+<code>
 <script type="text/javascript" src="jquiz.js"></script>
+</code>
 
 You may have to modify the href of the CSS and the src of the javascript files to make sure they are pointing to the right location. Please google the answer if you do not know how.
 
@@ -22,7 +28,7 @@ FORMATTING JQUIZ HTML
 
 EXAMPLE HTML OF JQUIZ
 
-
+<code>
 <ol id="quiz">
 
     <li>
@@ -108,3 +114,4 @@ EXAMPLE HTML OF JQUIZ
 	<p id="quiztotal">&nbsp;</p>
 
 </div>
+</code>
